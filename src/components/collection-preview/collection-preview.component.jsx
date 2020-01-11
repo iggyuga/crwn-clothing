@@ -7,8 +7,10 @@ const CollectionPreview = ({ title, items }) => (
 		<h1 className='title'>{title.toUpperCase()}</h1>
 		<div className='preview'>
 			{items.map(item => (
-				<div>item.name</div>
+				<div key={item.id}>{item.name}</div>
 			))}
 		</div>
 	</div>	
 )
+
+export default CollectionPreview;
